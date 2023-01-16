@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <!-- linking the css file to HTML -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Outer container -->
+    <div id="container">
+        <!-- Container for containing time -->
+        <div id="time">
+        <!-- Spans for hour -->
+        <span class="digit" id="hr">00</span>
+        <span class="txt">Hr</span>
+        <!-- Spans for min -->
+        <span class="digit" id="min">00</span>
+        <span class="txt">Min</span>
+        <!-- Spans for Second -->
+        <span class="digit" id="sec">00</span>
+        <span class="txt">Sec</span>
+         <!-- span for 100th part of second -->
+        <span class="digit" id="count">00</span>
+        
+        </div>
+        <!-- Container for buttons -->
+        <div id="btn-container">
+            <!-- Start button  -->
+          <button class="btn" id="start" onclick="start()">Start</button>
+          <!-- Stop button -->
+          <button class="btn" id="stop" onclick="stop()">Stop</button>
+          <!-- Reset button -->
+          <button class="btn" id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+<!-- linking the script.js file with html -->
+    <script src="./script.js"></script>
+</body>
+</html>
